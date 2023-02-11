@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #14213d;
+    --secondary-color: #fca311;
+    --accent-1: #000000;
+    --accent-2: #e5e5e5;
+    --background-color: #ffffff;
+    --link-color: #282c62;
+    --link-hover: #5c72c9;
+  }
+  
+  body {
+    font-family: "Urbanist", Helvetica, Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;  
+  }
+  
+  h1, h2 {
+    margin: 0.5em 0;
+    
+    font-weight: 400;
+  }
+  
+  h3, h4 {
+    font-weight: 600;
+  }
+  
+  h4 {
+    margin-top: 0.75em;
+  }
+  
+  a, a:visited {
+    color: var(--link-color);
+  }
+  
+  a:hover {
+    color: var(--link-hover);
+  }
+  
+  header {
+    padding: 0.55em;
+    margin-bottom: 0.5em;
+    border-radius: 0px 50px 0px 50px;
+  
+    background-color:turquoise;
+    color:black;
+    
+    text-align: center;
+  }
+  
+  main {
+    margin: 0 auto;
+    padding: 20px;
+  
+    background-color: var(--background-color);
+  }
+  
+  .page-grid {
+    display: grid;
+    grid-template-areas: "topic1"
+                         "topic2"
+                         "topic3";
+    grid-gap: 2em;
+  }
+  
+  section.topic-card {
+    display: block;
+    height: 100%;
+  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    background-color: var(--accent-2);
+  }
+  
+  .topic1 {
+    grid-area: topic1;
+    
+  }
+  
+  .topic2 {
+    grid-area: topic2;
+  }
+  
+  .topic3 {
+    grid-area: topic3;
+    
+  }
+  
+  .title {
+    display: block;
+    
+    background-color:yellow;
+    color: var(--accent-1);
+    
+    font-size: 1.2em;
+    
+    border-top: 2px solid #df1182bb;
+    border-left: 2px solid #11e70a;
+    border-right: 2px solid #11e70a;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    padding: 0.5em 0.5rem;
+    
+    margin: 0;
+  }
+  
+  .content {
+    display: block;
+    
+    font-size: 0.9em;
+    line-height: 1.5em;
+  
+    padding: 0.1em 0.75em;
+  }
+  
+  .body-text {
+    padding-left: 0.25em;
+    padding-right: 0.25em; 
+  }
+  
+  .site-link {
+    font-weight: 600;
+    
+    margin: 0.25em 0 1.25em 0;
+  }
+  
+  .website-image {
+    display: block;
+    width: 100%;
+  
+    background: var(--accent-2);
+    
+    text-align: center;
+  }
+  
+  .website-image img {
+    width: 100%;
+    max-width: 900px;
+  
+    border: 1px solid black;
+    box-shadow: 0 5px 10px #888;   
+  }
+  
+  footer {
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: center;
+  
+    background-color: turquoise;
+    color: black;
+    border-radius: 22px;
+    
+    padding: 0.75em;
+  }
+  
+  #timestamp {
+    font-family: 'Source Code Pro', Courier, monospace;
+  }
