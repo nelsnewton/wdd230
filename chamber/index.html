@@ -63,8 +63,8 @@
             <div class="weather">
                 <h2>Weather</h2>
                 <p class="temperature">38</p>
-            
             <p class="main">Sunny</p>
+            <img src="images/clear.jfif" alt="Sunny Weather">  
             <p>Wind Speed: <span class="wind-speed">4</span> MPH</p>
             <p>Wind Chill: <span class="wind-chill">N/A</span></p>
             </div>
@@ -82,7 +82,13 @@
             </div>
             <div class="action">
                 <P>
-                    <img src="images/wdd230-org (1).jpg" alt="Action">
+                    <picture class="heroPicture">
+                <source srcset="images/wdd230-org (1).jpg" media="(min-width: 768px) and 
+                (max-width: 993px)">
+                <source srcset="images/wdd230-org (1).jpg" media="(min-width: 992px)">
+                <img src="images/wdd230-org (1).jpg" media="(min-width:250px)" alt="wdd230 picture">              
+            </picture>
+                   <!-- <img src="images/wdd230-org (1).jpg" alt="Action">-->
                     <a href="#">Join The Chamber</a>
                 </P>
             </div>
