@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@media screen and (min-width: 360px){
+@media screen and (min-width: 32.5em){
 
 html {
     font-family: "Oswald", Helvetica, sans-serif;
