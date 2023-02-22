@@ -1,67 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/tablebuild.css">
-    <title>WO8 table Build</title>
-  <body>
-      <table id="table1">
+    <link rel="stylesheet" href="css/table.css">
+    <title>week08 table build</title>
+</head>
+<body>
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
         <thead>
-        <tr>
-          <th>Table Build</th>
-        </tr>
+            <tr>
+                <th colspan="4" scope="colgroup">
+                    ACME Wildwest Services
+                </th>
+            </tr>
+            <tr>
+                <th scope="col" id="blank"> </th>
+            
+                <th scope="col" class="colheaders">Basic</th>
+            
+                <th scope="col" class="colheaders">Premium</th>
+            
+                <th scope="col" class="colheaders">Deluxe</th>
+
+            </tr>
         </thead>
-      <tr>
-         <td id="nested">
-          <table id="table2">
-            <tbody>
+        <tbody>
             <tr>
-              <th colspan="3">BIRTH AND DEATH RATES STATISTICS</th>
+                <td class="rowheaders">
+                    Feature 1
+                </td>
+                <td >
+                    &#x2713;
+                </td>
+                <td>
+                    &#x2713;
+                </td>
+                <td>
+                    &#x2713;
+                </td>
             </tr>
             <tr>
-              <th class="tbody">Period</th>
-              <th class="tbody">Birth</th>
-              <th class="tbody">Death</th>
+                <td class="rowheaders">
+                    Feature 2
+                </td>
+                <td>
+                    X
+                </td>
+                <td>
+                    &#x2713;
+                </td>
+                <td>
+                    &#x2713;
+                </td>
             </tr>
             <tr>
-              <td>2000</td>
-              <td>3,524</td>
-              <td>2,584</td>
+                <td class="rowheaders">
+                    Feature 3
+                </td>
+                <td>
+                    X
+                </td>
+                <td>
+                    X
+                </td>
+                <td>
+                    &#x2713;
+                </td>
             </tr>
-            <tr>
-              <td>2001</td>
-              <td>5,859</td>
-              <td>3,547</td>
-            </tr>
-            <tr>
-              <td>2002</td>
-              <td>2,524</td>
-              <td>1,456</td>
-            </tr>
-            <tr>
-              <td>2003</td>
-              <td>6,452</td>
-              <td class="highlight">4,502</td>
-            </tr>
-            <tr>
-              <td>2004</td>
-              <td>5,200</td>
-              <td>3,200</td>
-  
-            </tr>
-            <tr>
-              <td>2005</td>
-              <td>3,521</td>
-              <td>2,258</td>
-            </tr>
-              <tr>
-                <td colspan="3">Compiled on 02.22.2023 by Tumwesige Nelson</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
-  
-  </html>
+        </tbody>
+    </table>    
+</body>
+</html>
