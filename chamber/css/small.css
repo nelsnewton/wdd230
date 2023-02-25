@@ -16,8 +16,7 @@ html {
 body {
     margin-left: 2vw;
     font-family: "Oswald", Helvetica, sans-serif;
-}                                                                                                                                                                                                                           
-
+}      
 /************HEADER SECTION*****************************/
 
 header {
@@ -259,7 +258,12 @@ button {
 .event {
     grid-row: 1 / 2;
 }
-
+.event1{
+    grid-row: 1 / 2;  
+}
+.event1 a img{
+    width: 50%;
+}
 .weather {
     grid-row: 2 / 3;
     background-color:skyblue;
@@ -271,29 +275,30 @@ button {
     display: flex;
     flex-direction: row;
     grid-row: 3 / 4;
-    background-color:gold;
+    background-color:rgb(38, 37, 28);
 }
 
 .action img {
     border-radius: 0%;
     height: 100%;
-    width: 100%;
+    width:100%;
     position: relative;
-    right:4.2%;
+    right:5.2%;
 }
-
 .action a {
-    position: absolute;
+    position:center;
     left: 45%;
-    background: rgba(61, 61, 61, 0.8);
+    background: rgba(9, 145, 218, 0.8);
     padding: 1em;
+    border-radius:50px;
+    box-shadow: 8px 4px 8px 8px rgba(0, 0, 0, 0.3), 8px 6px 20px 20px rgba(0, 0, 0, 0.3);
     color: orange;
     font-size: 1.1rem;
     transition: all 500ms;
 }
 
 .action a:hover {
-    background: rgba(61, 61, 61, 1);
+    background: rgb(200, 65, 2);
     font-size: 1.2rem;
 }
 /*..............END OF CLASS ACTION...............................................*/
@@ -405,6 +410,99 @@ footer a {
 
 .footer a {
     text-decoration: none;
+}
+
+/*.................FORM............*/
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .2rem 2%;
+}
+
+form legend{
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 15px;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0,1);
+}
+
+form label.radio{
+    display: block;
+    padding: .75rem;
+    color:white;
+}
+
+form input.submitBtn{
+    border: 1 px solid red;
+    background-color: #445ba9;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}  
+
+form label.top input:required{
+    border-left: 6px solid red;
+}
+
+form label.top input:required:valid{
+    border-left: 6px solid green;
+}
+
+.clearfix ul a {
+    display:block;
+    color:blue;
+    background-color: brown;
+    animation-direction: reverse;
+    float: left;
+    
+}
+.fom{
+    color: #0d3e5f;
+    box-shadow: 10px 6px 10px 10px rgba(0, 0, 0, 0.3), 8px 6px 20px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 3px 5px rgb(192, 233, 13);
+}
+
+.clearfix{
+    background-color: chocolate;
+    animation-direction: reverse;
+}
+.thanks{
+    font-size: 1.2rem;
+}
+.all{
+    text-align: center;
+}
+.confirm img{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+main{
+    background-color:darkslategrey;
 }
 
 }
