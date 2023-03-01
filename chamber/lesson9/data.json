@@ -1,5 +1,6 @@
 {
-	"companies": [{
+	"companies": [
+		{
 			"name": "Uganda Chamber of Commerce for SMEs",
 			"address": "8JC2+JWC, Kampala",
 			"phone": "041 4695862",
@@ -46,7 +47,7 @@
 			"address": "House, Plot 38, Deal, 40 Kampala Road, Kampala",
 			"phone": "0751 966943",
 			"site": "http://www.kindergeldnetworkug.org/",
-			"imageurl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmokolimbomedia.com%2Ftycoon-sudhir-ruparelia-regains-crane-bank%2F&psig=AOvVaw3GZm9rqdlkNsvfNpMX2rkz&ust=1646620563866000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLD9oOq5sPYCFQAAAAAdAAAAABAD",
+			"imageurl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmokolimbomedia.com%2Ftycoon-sudhir-ruparelia-regains-crane-bank%2F&psig=AOvVaw3GZm9rqdlkNsvfNpMX2rkz&ust=1646620563866000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLD9oOq5sPYCFQAAAAAdAAAAABAD"
 		},
 		{
 			"name": "AYA Group Uganda Limited",
