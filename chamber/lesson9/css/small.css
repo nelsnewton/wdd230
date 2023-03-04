@@ -534,7 +534,7 @@ main picture img[data-src] {
 section img{
     width: 50%;
     height: 50%;
-    margin: 3px;
+    margin: 50px;
     padding: 2px;
     background-color: chocolate;
     display: grid;
