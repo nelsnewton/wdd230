@@ -16,7 +16,7 @@ const companies = document.querySelector('.companies');
     logo.setAttribute('alt', company.name);
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('title', company.name);
-
+                                                     
     site.setAttribute('href', company.site);
     site.setAttribute('target', 'blank');
   
