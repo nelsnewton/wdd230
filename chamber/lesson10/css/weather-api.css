@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@media only screen and ( min-width:32.5rem){
     body {
         text-align: center;
         background-color: skyblue;
@@ -13,16 +12,6 @@
         font-weight: bold;
         font-size: larger;
     }
-    .wind-speed{
-        color: black;
-        font-weight: bold;
-        font-size: larger;
-    }
-    .wind-chill{
-        color: black;
-        font-weight: bold;
-        font-size: larger;
-    }
     #weather-icon {
         max-width: 50px;
         height: auto;
@@ -31,4 +20,3 @@
         color: aliceblue;
     }
     
-}
