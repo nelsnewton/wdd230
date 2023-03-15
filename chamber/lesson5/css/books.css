@@ -1,0 +1,81 @@
+/*import url("https://fonts.googleapis.com/css2?family=Acme&display=swap"); */
+* {
+	margin: 0;
+	padding: 0;
+
+}
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+main {
+	margin: 0.5rem auto;
+	border: 2px solid black;
+	padding: 0.5rem;
+	background-color:red;
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 96%;
+    border-radius: 30px 30px 30px 30px;
+}
+
+input,
+button {
+	padding: 0.35rem;
+	margin-left: 1rem;
+	font-size: 1.1rem;
+    border-radius: 10px 10px 10px 10px;
+    color: brown;
+}
+
+input {
+	width: 200px;
+}
+
+label {
+	font-size: 1.5rem;
+}
+.box {
+	border: 1.5px solid yellow;
+    border-radius: 30px 30px 30px 30px;
+	margin: 1rem;
+	padding: 1rem;
+ 
+}
+
+.book_list {
+	margin: 0.2rem;
+}
+
+ul {
+	margin: 1rem;
+	list-style: none;
+}
+
+lo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 32.5em) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		width: 450px;
+    
+	}
+}

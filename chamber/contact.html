@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber website for WDD230, Brigham Young University Idaho">
+    
+    <title>home_rearing_hens</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Cormorant:wght@300&family=PT+Sans+Caption&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="css/normalize.css">
+        
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="shortcut icon" href="assets/favicon.png">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/cont.png" alt="contact us Logo"/> 
+        <div class="title">      
+            <h1>CONTACT     US</h1>
+            <h2>Nelsbour Poultry Farm</h2>
+        </div>
+        <nav>
+            <button id="hamBtn">&#9776;</button>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/"><img src="assets/facebook.jpg" alt="facebook icon" target="_blank"></a> 
+            <a href="https://www.youtube.com/"><img src="assets/youtube.png" alt="youtube icon" target="_blank"></a> 
+        </div>
+        <div id="currentDate"></div>
+         
+    </header>
+   
+    <main>
+       <div class="contactDiv">
+        <div class="contact">
+            <figure>
+                <source media="(max-width: 400px)" srcset="assets/manaus-market-200px.jpg">
+                <source media="(min-width: 400px)" srcset="assets/manaus-market-400px.jpg">
+                <source media="(min-width: 800px)" srcset="assets/manaus-market-800px.jpg">
+                <source media="(min-width: 1200px)" srcset="assets/manaus-market-original.jpg">
+                <img src="assets/newton.jpg" 
+                    data-src="assets/newton.jpg"
+                    alt="cell Phone"> 
+            </figure>
+            <section>
+                <h1></h1>
+            </section>
+            <p>Send us your questions by filling the form. We will respond
+                promptly to your inquiry in time.
+            </p>
+        </div>
+        <form class="contact" action="thankyou.html" method="get">
+            <h2>Contact Information</h2>
+            <fieldset>
+                <legend>Personal</legend>
+                <label class="top">
+                    Name *
+                    <input type="text" id="fname" name="fname" required></label><br>
+                <label class="top">
+                    E-mail<input type="email" id="email" name="email" placeholder="yourname@email.com">
+                </label><br>
+                <label class="top">
+                    Phone number
+                    <input type="tel" id="phone" name="phone" placeholder="55  92  98566-6684">
+                </label><br>
+                <label class="top">
+                    Coments/Questions
+                <textarea id="description" name="description" rows="6"></textarea></label><br>
+            </fieldset>
+      
+            <label class="sendBtn"><input class="send" name="button" type="button" value="Send"></label>
+
+            <input type="hidden" id="postId" name="postId" value="datetime">
+
+            <div class="membershipInfo">
+
+            </div>
+        </form>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <img class="footerLogo" src="assets/logo.png" alt="Nelsbour chamber of commerce">
+        <div class="address">
+            <h3>Nelsbour poultry Farm</h3>
+            <p>P.O. Box 1245, Kampala</p>
+            <p>nellysabastian</p>
+        </div>
+        <div class="contactInfo">
+            <p>nelsonsabastian94@gmail.com</p>
+            <p>+256 783077557</p>
+            <br>
+            <a target="_blank" rel="noopener" href="https://googlemaps.com"><i class="material-icons">&#xe55f;</i>Location</a>
+        </div>
+        <div class="lastUpdated">     
+        <p>&copy;<span id="currentYear"></span> Nelsbour poultry Farm Uganda| Tumwesige Nelson <br> Last Updated: <span id="lastUpdate"></span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/datetime.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/spotlight.js"></script>
+</body>
+</html>

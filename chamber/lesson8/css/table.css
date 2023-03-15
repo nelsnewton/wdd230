@@ -1,0 +1,63 @@
+
+body {
+    font-family: "Oswald", Helvetica, sans-serif;
+    background-color: black;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 7px var(--shadow);
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 2px solid rgb(4, 113, 24);
+    text-align: center;
+}
+tr:first-child th, .highlight {
+	background-color: rgb(14, 14, 14);
+	color: white;
+}
+#blank {
+    background-color: rgb(16, 16, 16);
+}
+.colheaders{
+    background-color: grey;
+    color: rgb(14, 2, 2);
+    font-weight: bold;
+}
+.rowheaders {
+    font-weight: bold;
+}
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: rgb(6, 108, 3);
+    font-size: .85rem;
+}
+tbody tr:nth-child(1){
+    background-color: rgb(233, 189, 13);
+}
+tbody tr:nth-child(2){
+    background-color: rgb(222, 3, 3);
+}
+tbody tr:nth-child(3){
+    background-color: rgb(217, 146, 3);
+}
+body {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 30px var(--shadow);
+	border-collapse: collapse;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+}
+:root {
+	--foredark: hsla(0,0%,10%,1);
+	--forelight: rgb(255, 255, 255);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+}

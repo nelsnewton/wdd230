@@ -1,0 +1,810 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'EB Garamond', 'Times New Roman', serif;
+}
+html{
+	width: 100%;
+}
+
+h1, h3{
+	font-family: 'EB Garamond', 'Times New Roman', serif;
+	margin: 0;
+	background: transparent;
+	border: none;
+}
+
+img[data-src] {
+	filter: blur(0.7em);
+}
+
+img{
+	filter: blur(0em);
+	transition: filter 0.5s;
+}
+
+#popup a{
+	color: #1a0f7c;
+	font-family: 'PT Sans', sans-serif;
+}
+
+#popup button{
+	padding: 5px;
+}
+/*---------HOVERS--------*/
+.weather:hover{
+	background-color: #0d3e5f;
+	opacity: 0.8;
+	transition: all 1s ease-in-out;
+}
+.main:hover{
+	transition: all 2s ease-in-out;
+	background-color: #888888;
+}
+.release:hover{
+	background-color: #0d3e5f;
+	opacity: 0.8;
+	transition: all 1s ease-in-out;
+
+}
+.event:hover{
+	background-color: #0d3e5f;
+	opacity: 0.8;
+	transition: all 1s ease-in-out;
+}
+.join:hover{
+	background-color: #0d3e5f;
+	opacity: 0.8;
+	transition: all 1s ease-in-out;
+}
+.spotlight1:hover{
+	background-color: #0d3e5f;
+	opacity: 0.8;
+	transition: all 1s ease-in-out;
+}
+.spotlight2:hover{
+	background-color: #0d3e5f;
+	opacity: 0.8;
+	transition: all 1s ease-in-out;
+}
+.spotlight3:hover{
+	background-color: #0d3e5f;
+	opacity: 0.8;
+	transition: all 1s ease-in-out;
+}
+/*------------------------------------HEADER------------------------------------*/
+
+header, footer{
+	background-color: #762107;
+	width: 100%;
+	color: snow;
+}
+
+header{
+	padding: 20px 0;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	align-items: center;
+	background-color:rgb(2, 66, 79);
+}
+header:hover { 
+    background: rgba(30, 29, 29, 0.8);
+}
+
+
+header .logo{
+	width: 50px;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	justify-self: center;
+	margin-left: 1.25vw;
+    border-radius: 50%;
+}
+
+.title{
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	grid-column: 2 / 6;
+	grid-row: 1 / 2;
+}
+
+.socialMedia{
+	grid-column: 5 / 6;
+	grid-row: 2 / 3;
+	display: flex;
+	align-items: center;
+	align-self: start;
+	margin-top: 10px;
+}
+
+.socialMedia img{
+	width: 20px;
+	height: 50px;
+	padding: 5px;
+	border-radius: 50px;
+}
+
+nav{
+	grid-column: 1 / 6;
+	grid-row: 2 / 3;
+}
+nav ul li a:hover {
+    background-color: #d96a09;
+}
+
+
+.open{
+	display: block;
+	text-align: center;
+}
+
+nav ul{
+	display: none;
+}
+
+nav ul li.active a{
+	background-color: rgb(78, 47, 4);
+}
+
+nav ul li a:hover {
+	background-color:  rgba(203, 210, 5, 0.983);
+	border-radius: 20px;
+}
+
+nav ul li a{
+	display: block;
+	font-size: 1.2rem;
+	color: snow;
+	padding: .8rem 2vw;
+	text-decoration: none;
+	border-top: 1px solid rgba(0,0,0,0.5);
+	background: linear-gradient(90deg, transparent, #07ac0f, transparent) bottom /
+		var(--d, 0) 3px no-repeat;
+	transition: 0.9s;
+}
+
+nav button{
+	font-size: 1rem;
+	color: rgb(163, 5, 5);
+	text-align: right;
+	margin: 10px;
+	background-color: black;
+}
+
+#currentDate{
+	background-color: rgba(0,0,0,.05);
+	border: 1px solid rgba(0,0,0,.2);
+	font-size: 1.1rem;
+	padding: 10px 0;
+	text-align: center;
+	color: yellow;	
+	grid-column: 1 / 6;
+}
+
+/*--------------------------------------MAIN--------------------------------------*/
+
+.item{
+	background: #ecc6ba;
+	width: 95%;
+	margin: 10px auto;
+	padding: 20px;	
+}
+
+.item h3{
+	font-family: 'PT Sans', sans-serif;
+	border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.item p{
+	margin: 10px 0;
+	font-size: 1rem;
+}
+
+.item picture{
+	width: 100%;
+	height: 100%;
+}
+
+.hero{
+	padding: 0;
+	position: relative;
+}
+
+.hero section{
+	position: absolute;
+	padding: 10px 0;
+	top: 0vw;
+	left: 0vw;
+	right: 0vw;
+	background-color: rgba(0,0,0,.6);
+}
+
+.heroBackground {
+	/*background-image: url("../assets/water-meeting.jpg");
+	background-position: center;*/
+	width: 100%;
+	height: 100%;
+}
+
+.hero h1{
+	color: snow;
+	text-align: center;
+	padding: 5px 8px;
+}
+
+.hero button{
+	position: absolute;
+	background-color: #ACCE22;
+	font-size: 1rem;
+	border-radius: 50px;
+	top: 80px;
+	left: 2vw;
+	right: 2vw;
+}
+
+.hero button:hover{
+	background-color: rgb(51, 6, 0);
+}
+
+.hero a button {
+	color: black;
+	font-size: 1.1em;
+	display: block;
+	padding: 12px 30px;
+}
+
+.hero a button:hover{
+	color: snow;
+}
+/*weaher*/
+.temperature{
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+	padding-left: 50px;
+	margin-top: 50px;
+}
+.wind-speed{
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+.wind-chill{
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+.weather img {
+    width: 120px;
+    height: 50px;
+	padding-left: 70px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+.weather > div{
+	background-color: snow;
+	margin-top: 15px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+	padding: 10px;
+}
+.weather{
+	background-color: skyblue;
+}
+.main p{
+	padding-left: 50px;
+}
+.weather h2{
+	padding-left: 30px;
+}
+/*end*/
+
+
+.release p, .join p{
+	background-color: snow;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.2rem;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.join img{
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+}
+
+.spotlight{
+	background: snow;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.event button{
+	background-color: #762107;
+	color: snow;
+	border-radius: 50px;
+	max-width: 250px;
+	margin: 10px auto;
+}
+
+.event button:hover{
+	background-color: rgb(51, 6, 0);
+}
+
+.event a button{
+	text-decoration: none;
+	color: snow;
+	display: block;
+	padding: 12px 30px;
+	margin-top: 50px
+}
+
+.event a button:hover{
+	text-decoration: none;
+	color: snow;
+}
+
+main{
+	padding: 2vw 2VW;
+}
+/*.................FORM............*/
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .2rem 2%;
+}
+
+form legend{
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+
+}
+
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 15px;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0,1);
+}
+
+form label.radio{
+    display: block;
+    padding: .75rem;
+    color:white;
+}
+
+form input.submitBtn{
+    border: 1 px solid red;
+    background-color: #445ba9;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}  
+
+form label.top input:required{
+    border-left: 6px solid red;
+}
+
+form label.top input:required:valid{
+    border-left: 6px solid green;
+}
+
+.clearfix ul a {
+    display:block;
+    color:blue;
+    background-color: brown;
+    animation-direction: reverse;
+    float: left;
+    
+}
+.fom{
+    color: #0d3e5f;
+    box-shadow: 10px 6px 10px 10px rgba(0, 0, 0, 0.3), 8px 6px 20px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 3px 5px rgb(192, 233, 13);
+}
+
+.clearfix{
+    background-color: chocolate;
+    animation-direction: reverse;
+}
+.thanks{
+    font-size: 1.2rem;
+}
+.all{
+    text-align: center;
+}
+.confirm img{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+main{
+    background-color:darkslategrey;
+}
+
+
+/*----------------------------------FOOTER------------------------------------*/
+h6{
+	font-size: 30px;
+	color: yellow;
+}
+#daysleft{
+	color: red;
+}
+#visits{
+	color: red;
+}
+.times{
+    text-align: center;
+}
+footer{
+	text-align: center;
+	padding: 3vw;
+	margin-top: 0px;
+}
+
+footer p{
+	border-top: 1px solid rgba(0,0,0,0.2);
+	padding: 15px;
+}
+
+.map{
+	padding: 15px;
+}
+
+.footerLogo{
+	
+	border-radius: 50px;
+	margin-top: 0px;
+
+}
+.lastUpdated p{
+
+	text-align: center;
+}
+.footer {
+    display: grid;
+    place-items: center;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    background-color: #0d3e5f;
+    box-shadow: 8px 4px 8px 8px rgba(0, 0, 0, 0.3), 8px 6px 20px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer p {
+    color: #fff;
+    font-size: .90rem;
+}
+
+.footer h3 {
+    font-size: .90rem;
+}
+
+.footer img {
+    max-width: 6rem;
+    margin: .5rem;
+}
+
+.address {
+    margin: .7rem;
+}
+
+.contactInfo {
+    margin: .7rem;
+    padding: .5rem;
+}
+
+#lastMod{
+    margin: .5rem none none none;
+    padding: .5rem;
+  
+}
+
+.material-icons {
+    font-size: 1rem;
+    color: rgb(87, 3, 3);
+}
+
+.footer a {
+    text-decoration: none;
+}
+/*----------------------------------DISCOVER PAGE------------------------------------*/
+
+.discover-page{
+	display: flex;
+	flex-direction: column;
+}
+
+.discover{
+	max-width: 100%;
+	margin: 25px auto 10px auto;
+}
+
+.discover img{
+	border-radius: 50PX 80px 50PX 80px;
+	border-style:double;
+	max-width: 100%;
+	box-shadow: 3px solid black;
+}
+
+
+figcaption{
+	text-align: center;
+	margin: 25px 10px;
+	text-shadow: #762107;
+    text-overflow: clip;
+	text-decoration-color: darkgreen;
+}
+
+		
+.shown, #popup{
+	background-color: #ACCE22;
+	color: rgba(0,0,0,.9);
+	font-size: 1.2rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+	padding: 10px;
+	max-width: 500px;
+	position: fixed;
+	bottom: 20px;	
+}
+
+.hidden{
+	display: none;
+}
+
+/*--------------------------------------JOIN PAGE--------------------------------------*/
+
+form{
+	margin: 2rem auto;
+	background-color: #ffded4;
+}
+
+form h2{
+	text-align: center;
+	padding: 15px;
+}
+
+form fieldset{
+	margin: 1.5rem auto;
+	padding: .8rem;
+	border-radius: 10px;
+	max-width: 80%;
+}
+
+form legend{
+	padding: .2rem .8rem;
+	border: 1.5px solid rgba(0,0,0,0.5);
+}
+
+
+form label.top, form div{
+	display: block;
+	padding-top: .5rem;
+	margin: 10px auto;
+	max-width: 90%;
+}
+
+form label.top input, form label.top textarea{
+	display: block;
+	padding: .75rem;
+	width: 95%;
+	border-radius: 5px;
+}
+
+form label.sbs{
+	display: block;
+}
+
+form label.sbs input{
+	margin: 5px;
+	padding: .75rem;
+}
+
+form label.sbs span{
+	background-color: #762107;
+	color: snow;
+	padding: 5px 15px;
+	border-radius: 15px;
+	margin-left: 30px;
+}
+
+form input.send{
+	margin: 1.5rem 0 1.5rem 2.5rem;
+	padding: .8rem;
+	border-radius: 50px;
+	background-color: #ACCE22;
+}
+
+form label.top input:required{
+	border-left: red solid	 6px;
+}
+
+form label.top input:required:valid{
+	border-left: green solid 6px;
+}
+
+/*--------------------------------------THANK YOU PAGE--------------------------------------*/
+
+.thanks{
+	max-width: 90%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.thanks p{
+	margin-bottom: 50px;
+}
+
+.home{
+	background-color: #ACCE22;
+	border-radius: 50px;
+	padding: 15px 50px;
+	margin-bottom: 25px;
+	font-size: 1.5rem;
+}
+
+.thanksTitle{
+	font-size: 2.5rem;
+	margin: 20px 0;
+}
+
+
+/*------------------------------------DIRECTORY PAGE------------------------------------*/
+.companies{
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.imageurl{
+    width: 50%;
+    height: 50%;
+}
+div.cards{margin: 15px 0;}
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	column-gap: 10px;
+	margin: 15px auto;
+}
+
+button.listBtn, button.cardBtn{
+	width: 10px;
+	height: 10px;
+	border: 1px solid green;
+	border-radius: 10px;
+}
+
+
+img.logoImg{
+	display: block;
+	width: 200px; 
+    height: 120px; 
+    object-fit: cover;
+	margin: 5px auto;
+}
+
+/*------------------------------------SPOTLIGHT BUSINESS------------------------------------*/
+.spotlight1 img, .spotlight2 img, .spotlight3 img{
+	width: 20px;
+	height: 30px;
+}
+
+.spotCard section{
+	margin: 20px auto;
+}
+
+.spotCard img{
+	display: block;
+}
+
+.spotCard a{
+	text-decoration: none;
+	color: black
+}
+
+.spotCard a:hover{
+	color: rgb(163, 58, 16);
+}
+
+.spotCard{
+	max-width: 90%;
+	margin: 20px auto;
+	padding: 15px;
+	box-shadow: 0px 2px 8px #888888;
+}
+
+.spotCard h3, .spotCard h4{
+	font-size: 1rem;
+	text-align: center;
+	padding: 5px;
+}
+
+.spotCard p{
+	padding: 10px; 
+	font-size: 1rem;
+	text-align: center;
+	font-size: 1rem;
+   	margin: 2px 0;
+    padding: 2px 0;
+}
+
+img.logo{
+	display: block;
+	max-width: 100%; 
+    object-fit: cover;
+	margin: 5px auto;
+}
+
+/*------------------------------------CONTACT PAGE------------------------------------*/
+
+div.contact{
+	position: relative;
+	margin-top: 150px;
+}
+
+.contact h1{
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0 10px;
+}
+
+.contact img{
+	width: 100%
+}
+
+.contact section{
+	position: absolute;
+	top: 80px;
+}
+
+.contact p{
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 15px;
+	margin: 0 auto;
+	max-width: 85%;
+}
+
+form.contact{
+	margin: 1em auto;
+	width: 100%;
+	background-color: transparent;
+}
+
+form.contact input{
+	padding: 10px 50px;
+}
