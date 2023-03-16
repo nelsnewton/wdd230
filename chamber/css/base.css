@@ -701,12 +701,34 @@ form label.top input:required:valid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.imageurl{
-    width: 50%;
-    height: 50%;
+.companies img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+    height: 60%;
+	border-radius: 10%;
+	transition: all 500ms ease-in-out;
 }
-div.cards{margin: 15px 0;}
-
+.companies img:hover{
+	background-color: #f08010;
+}
+.companies h2{
+	color:white;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.companies h3{
+	color: chocolate;
+	font-size: 15px;
+}
+.companies a{
+	color: rgb(8, 12, 216);
+	transition: all 500ms ease-in-out;
+	font-size: 15px;
+}
+.companies a:hover{
+	background-color: yellowgreen;
+}
 .buttons{
 	display: flex;
 	justify-content: center;
@@ -729,6 +751,20 @@ img.logoImg{
     object-fit: cover;
 	margin: 5px auto;
 }
+.menu1 {
+    display: block;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	text-align: center;
+    grid-area: dirmenu;
+}
+
+.menu1 button {
+	padding: 0.5rem;
+	font-weight: 700;
+	border: 1px solid #000;
+}
+
 
 /*------------------------------------SPOTLIGHT BUSINESS------------------------------------*/
 .spotlight1 img, .spotlight2 img, .spotlight3 img{

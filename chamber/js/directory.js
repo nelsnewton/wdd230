@@ -1,6 +1,22 @@
 
-const requestURL = 'https://nelsnewton.github.io/wdd230/chamber/lesson9/data.json';
+const requestURL = 'https://nelsnewton.github.io/wdd230/chamber/data.json';
 const companies = document.querySelector('.companies');
+const gridbutton = document.querySelector("#grid-button");
+const listbutton = document.querySelector("#list-button");
+
+//displaying in a list and grid styles
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
+function showGrid() {
+	display.classList.add("grid");
+	display.classList.remove("list");
+}
+
+gridbutton.addEventListener("click", showGrid);
+listbutton.addEventListener("click", showList); 
 
   function displayCompanies(company) {
     // Creating elements to add to the document
@@ -8,7 +24,7 @@ const companies = document.querySelector('.companies');
     let name = document.createElement('h2');
     let logo = document.createElement('img');
     let address = document.createElement('h3');
-    let tel = document.createElement('h3');
+    let tel = document.createElement('h4');
     let site = document.createElement('a');
 
 
@@ -25,6 +41,7 @@ const companies = document.querySelector('.companies');
     tel.textContent = company.phone;
     site.textContent = company.site;
 
+    section.appendChild(name);
     section.appendChild(logo);
     section.appendChild(address);
     section.appendChild(tel);
