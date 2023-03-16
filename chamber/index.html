@@ -62,14 +62,15 @@
             </section>
         </div>
         <div class="weather">
-            <h2>Weather</h2>
-            <p class="temperature">38</p>
-        <p class="main">Partly cloudy</p>
-        <img src="assets/sunny.jfif" alt="Sunny Weather">  
-        <p>Wind Speed: <span class="wind-speed">4</span> MPH</p>
-        <p>Wind Chill: <span class="wind-chill">N/A</span></p>
-        <p class="weather-attribution">data from openweathermap.org</p>
+            <h2 class="weather-top">Weather</h2>
+            <img id="weather-icon" class="weather-image" src="images/partlycloudy.png" alt="sunny weather">
+            <h1 class="weather-temp"><span>&#176;</span></h1>
+            <h2 id="shortForecast" class="weather-type"></h2>
+            <p class="weather-wind">Wind Speed: <b><span id="wind-speed"></span> km/h</b></p>
+            <p class="weather-chill">Wind Chill: <b><span id="wind-chill"></span></b></p>
+            <p class="weather-attribution">data from openweathermap.org</p>
         </div>
+
         <div class="item release">
             <h3>Business Call 📢</h3>
             <p> We want to support impact businesses and entrepreneurs that are generating 
@@ -148,7 +149,7 @@
     <script src="js/script.js"></script>
     <script src="js/toggleMenu.js"></script>
     <script src="js/datetime.js"></script>
-    <script src="js/weather.js"></script>
-   <!-- <script src="js/spotlight.js"></script>-->
+    <script src="js/windchill.js"></script>
+   
 </body>
 </html>

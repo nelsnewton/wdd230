@@ -26,7 +26,7 @@ img{
 
 #popup a{
 	color: #1a0f7c;
-	font-family: 'PT Sans', sans-serif;
+	font-family:'EB Garamond', 'Times New Roman', serif;
 }
 
 #popup button{
@@ -287,11 +287,19 @@ nav button{
 	
 	
 }
-.weather > div{
-	background-color: snow;
-	margin-top: 15px;
-	box-shadow: 2px 2px 8px rgba(0,0,0,.5);
-	padding: 10px;
+.weather-type{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 8px;
+	color: blue;
+}
+#wind-chill{
+	color: blue;
+	font-size: 18px;
+}
+#wind-speed{
+	color: blue;
+	font-size: 18px;
 }
 .weather{
 	background-color: skyblue;
@@ -302,7 +310,11 @@ nav button{
 .weather h2{
 	padding-left: 30px;
 }
-/*end*/
+.weather-temp{
+	text-align: center;
+	font-size: 40px;
+}
+
 
 
 .release p, .join p{
