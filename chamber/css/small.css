@@ -120,16 +120,7 @@ nav ul.open {
     font-size: 1.5rem;
 }
 
-/*
-#currentDate {
-    width: 90%;
-    border: 1px solid #bf6e50;
-    margin: 0 auto;
-    background-color: #bf6E50;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}*/
+
 .logo-box {
     display: grid;
     grid-auto-flow: column;

@@ -4,9 +4,9 @@ const visitsDisplay = document.querySelector("#visits");
 const daysLeftOutput = document.querySelector("#daysleft");
 
 // get the stored value in localStorage
-let numVisits = Number(window.localStorage.getItem("visits-ls")); // Using the Number() function ensures that if the storage item does not exist, it will be converted into a zero (0) which helps on the if block condition.
+let numVisits = Number(window.localStorage.getItem("visits-ls")); 
 
-// determine if this is the first visit or display the number of visits.
+// determine or display the number of visits.
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
 } else {
@@ -15,6 +15,7 @@ if (numVisits !== 0) {
 
 // increment the number of visits.
 numVisits++;
+
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date demonstration
@@ -30,6 +31,7 @@ if (today.getMonth() == 11 && today.getDate() > 25) {
 }
 
 let daysleft = (christmas.getTime() - Date.now()) / 84600000;
+
 daysLeftOutput.innerHTML = `${daysleft.toFixed(
 	0
 )} days<br> Christmas is ${christmas}`;
