@@ -13,18 +13,40 @@ function displayProphets(prophet) {
   let heading = document.createElement('h2');
   let birthDate = document.createElement('p');
   let birthPlace = document.createElement('p');
+
+  let death = document.createElement('p');
+  let length = document.createElement('p');
+  let order = document.createElement('p');
+  let numofchildren = document.createElement('p');
+
   let image = document.createElement('img');
 
   heading.textContent = `${prophet.name} ${prophet.lastname}`;
   birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
   birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
+
+  death.textContent = `death Date: ${prophet.death}`;
+  length.textContent = `length: ${prophet.length}`;
+  order.textContent = `No. ${prophet.order}`;
+  numofchildren.textContent = `number of children: ${prophet.numofchildren}`;
+
   image.src = prophet.imageurl;
   image.alt = `${prophet.name} ${prophet.lastname} - ${prophet.order}`;
 
   card.appendChild(heading);
-  card.appendChild(birthDate);
-  card.appendChild(birthPlace);
+  card.appendChild(order);
   card.appendChild(image);
+  card.appendChild(birthDate);
+  card.appendChild(death);
+  card.appendChild(birthPlace);
+  card.appendChild(numofchildren);
+
+  
+  card.appendChild(length);
+ 
+  
+
+
   document.querySelector('.cards').appendChild(card);
 }
 

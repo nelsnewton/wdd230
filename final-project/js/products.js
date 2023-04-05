@@ -2,7 +2,7 @@
 const requestURL = 'https://nelsnewton.github.io/wdd230/final-project/data.json';
 const companies = document.querySelector('.fruits');
 
-  function displayfruits(fruit) {
+  function displayFruits(fruit) {
     // Creating elements to add to the document and display
     let section = document.createElement('section');
     let name = document.createElement('h1');
@@ -17,7 +17,7 @@ const companies = document.querySelector('.fruits');
     logo.setAttribute('src',fruit.imageurl);
     logo.setAttribute('alt', fruit.name);
     logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('title', fruit.name);
+    logo.setAttribute('name', fruit.name);
   
     name.textContent = fruit.name;
     genus.textContent = fruit.genus;
@@ -32,10 +32,9 @@ const companies = document.querySelector('.fruits');
     section.appendChild(id);
     section.appendChild(family);
     section.appendChild(order);
-    section.appendChild(nutritions)
-
+    section.appendChild(nutritions);
     
-    fruit.appendChild(section);
+    fruits.appendChild(section);
     
   }
 
@@ -46,7 +45,7 @@ const companies = document.querySelector('.fruits');
   .then(function (jsonObject) {
     console.table(jsonObject);  
     const comp = jsonObject['fruits'];
-    comp.forEach(displayfruits);
+    comp.forEach(displayFruits);
   });  
 
 
