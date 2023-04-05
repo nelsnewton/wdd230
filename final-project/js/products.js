@@ -2,7 +2,7 @@
 const requestURL = 'https://nelsnewton.github.io/wdd230/final-project/data.json';
 const companies = document.querySelector('.fruits');
 
-  function displayfruits(fruits) {
+  function displayfruits(fruit) {
     // Creating elements to add to the document and display
     let section = document.createElement('section');
     let name = document.createElement('h1');
@@ -35,7 +35,7 @@ const companies = document.querySelector('.fruits');
     section.appendChild(nutritions)
 
     
-    fruits.appendChild(section);
+    fruit.appendChild(section);
     
   }
 
