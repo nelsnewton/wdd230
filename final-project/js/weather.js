@@ -11,7 +11,7 @@ fetch(url)
     const shortForecast = data.weather[0].description;
     const humidity = data.main.humidity
 
-    // Calculate wind chill
+    // Calculating wind chill
     let windChill;
     if (temperature <10 && windSpeed > 4.8) {
       windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
@@ -19,7 +19,7 @@ fetch(url)
       windChill = NaN;
     }
 
-    // Update the HTML with the temperature, wind speed, weather icon, and forecast
+    // Update the HTML with the temperature, wind speed and forecast
     document.querySelector('.weather-temp').innerHTML = `${temperature.toFixed(1)} &#176;C`;
     document.querySelector('#wind-speed').innerHTML = `${windSpeed.toFixed(1)}`;
     document.querySelector('#weather-icon').src = weatherIcon;

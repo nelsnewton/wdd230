@@ -1,4 +1,4 @@
-const requestURL = 'https://nelsnewton.github.io/wdd230/final-project/product.json';
+const requestURL = 'https://nelsnewton.github.io/wdd230/final-project/data.json';
 
 
 fetch(requestURL).then(function (response) {return response.json();})
@@ -20,7 +20,7 @@ function displayFruits(fruit) {
   let order = document.createElement('p');
   let image = document.createElement('img');
 
-  heading.textContent = `${fruit.name} ${fruit.name}`;
+  heading.textContent = `${fruit.name}`;
   name.textContent = `Name: ${fruit.name}`;
   genus.textContent = `Genus: ${fruit.genus}`;
 
@@ -38,12 +38,5 @@ function displayFruits(fruit) {
   card.appendChild(genus);
   card.appendChild(family);
   card.appendChild(nutritions);
-
-  
-  card.appendChild(length);
- 
-  
-
-
-  document.querySelector('.cards').appendChild(card);
+  document.querySelector('.fruits').appendChild(card);
 }

@@ -22,7 +22,7 @@ function updateClock() {
   seconds = seconds < 10 ? '0' + seconds : seconds;
   date = date < 10 ? '0' + date : date;
 
-  // display date and time
+  // display date and time in AM or PM times
   var period = hours < 12 ? 'AM' : 'AM';
   var period = hours > 12 ? 'PM' : 'PM';
   
