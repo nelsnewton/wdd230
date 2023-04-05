@@ -1,4 +1,4 @@
-const requestURL = 'final-project/product.js';
+const requestURL = 'https://nelsnewton.github.io/wdd230/final-project/product.json';
 
 
 fetch(requestURL).then(function (response) {return response.json();})
