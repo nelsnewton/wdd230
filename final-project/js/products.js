@@ -1,8 +1,8 @@
 
-const requestURL = 'https://nelsnewton.github.io/wdd230/chamber/data.json';
+const requestURL = 'https://nelsnewton.github.io/wdd230/final-project/data.json';
 const companies = document.querySelector('.fruits');
 
-  function displayfruits(fruit) {
+  function displayfruits(fruits) {
     // Creating elements to add to the document and display
     let section = document.createElement('section');
     let name = document.createElement('h1');
@@ -18,9 +18,6 @@ const companies = document.querySelector('.fruits');
     logo.setAttribute('alt', fruit.name);
     logo.setAttribute('loading', 'lazy');
     logo.setAttribute('title', fruit.name);
-                                                     
-    //site.setAttribute('href', company.site);
-    //site.setAttribute('target', 'blank');
   
     name.textContent = fruit.name;
     genus.textContent = fruit.genus;

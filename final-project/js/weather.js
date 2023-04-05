@@ -24,7 +24,7 @@ fetch(url)
     document.querySelector('#wind-speed').innerHTML = `${windSpeed.toFixed(1)}`;
     document.querySelector('#weather-icon').src = weatherIcon;
     document.querySelector('#shortForecast').innerHTML = shortForecast;
-    document.querySelector('#humidity').innerHTML = `${humidity.toFixed(1)}g/m`;
+    document.querySelector('#humidity').innerHTML = `${humidity.toFixed(1)}g/m3`;
 
     // Update the HTML with the wind chill
     if (isNaN(windChill)) {
